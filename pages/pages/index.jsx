@@ -27,7 +27,7 @@ export default function PageListTemplate({
 			/>{' '}
 			<PageHeader title="Pages" />
 			<div className="mt-12 mx-auto max-w-[50vw]">
-				<ul>
+				<ul classname="list">
 					{sortedPages ? (
 						sortedPages?.map(({ id, title, body, path }) => (
 							<li className="prose justify-items-start mt-8" key={id}>

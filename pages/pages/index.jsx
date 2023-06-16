@@ -31,7 +31,7 @@ export default function PageListTemplate({
 					{sortedPages ? (
 						sortedPages?.map(({ id, title, body, path }) => (
 							<li className="prose justify-items-start mt-8" key={id}>
-								<h2>{title}</h2>
+								<h2 className="title">{title}</h2>
 								<div dangerouslySetInnerHTML={{ __html: body?.summary }} />
 								<Link
 									passHref

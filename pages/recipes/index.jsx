@@ -92,7 +92,7 @@ export async function getServerSideProps(context) {
 			},
 		};
 	} catch (error) {
-		console.error('Unable to fetch data for recipes: ', error);
+		console.error('Unable to fetch data for your recipes: ', error);
 		return {
 			notFound: true,
 		};

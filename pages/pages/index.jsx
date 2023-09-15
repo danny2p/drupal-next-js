@@ -27,11 +27,11 @@ export default function PageListTemplate({
 			/>{' '}
 			<PageHeader title="Pages" />
 			<div className="mt-12 mx-auto max-w-[50vw]">
-				<ul>
+				<ul className="list-one">
 					{sortedPages ? (
 						sortedPages?.map(({ id, title, body, path }) => (
 							<li className="prose justify-items-start mt-8" key={id}>
-								<h2>{title}</h2>
+								<h2 className="title">{title}</h2>
 								<div dangerouslySetInnerHTML={{ __html: body?.summary }} />
 								<Link
 									passHref

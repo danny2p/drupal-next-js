@@ -30,7 +30,7 @@ export default function PageListTemplate({
 				<ul>
 					{sortedPages ? (
 						sortedPages?.map(({ id, title, body, path }) => (
-							<li className="prose justify-items-start mt-8" key={id}>
+							<li className="prose justify-items-start mt-8 pages-list" key={id}>
 								<h2>{title}</h2>
 								<div dangerouslySetInnerHTML={{ __html: body?.summary }} />
 								<Link
